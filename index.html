@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" href="icon/favicon-16x16.png" type="image/x-ico">
+</head>
+<body>
+    <main>
+      <!-- Seccion del menu-->
+      <div class=".container-xl">
+        <header class="p-3 bg-dark text-white">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="index.html">
+                <img src="img/logo.png" alt="Logo">
+              </a>
+
+             
+      
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link px-2 text-secondary">Inicio</a></li>
+                <li><a href="cursos.html" class="nav-link px-2 text-white">Cursos</a></li>
+                <li><a href="suscripcion.html" class="nav-link px-2 text-white">Suscripciones</a></li>
+                <li><a href="nosotros.html" class="nav-link px-2 text-white">Nosotros</a></li>
+              </ul>
+      
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+              </form>
+      
+              <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#modalSignin">Login</button>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalSignin">Sign-up</button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="modal fade" id="modalSignin" tabindex="-1" aria-labelledby="modalSigninLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content rounded-4 shadow">
+              <div class="modal-header p-5 pb-4 border-bottom-0">
+                <h1 class="fw-bold mb-0 fs-2" id="modalSigninLabel">Inicia Sesion</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body p-5 pt-0">
+                <form>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Correo</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Contrasena</label>
+                  </div>
+                  <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                  <small class="text-body-secondary">Guarda tus datos para el inicio automatico.</small>
+                  <hr class="my-4">
+                  <h2 class="fs-5 fw-bold mb-3">Otras formar de inicio</h2>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
+                    Inicia con Twitter
+                  </button>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
+                    Inicia con Facebook
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Titulo-->
+            <div class="px-4 pt-5 my-5 text-center">
+              <h1 class="display-4 fw-bold text-body-emphasis">HERO CODE</h1>
+            </div>
+
+      <!--Seccion donde se muestre 3 cursos-->
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="img/curso-python.jpg" alt="Curso">
+                <div class="card-body">
+                  <h1>Python</h1>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-body-secondary">Free</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="img/curso-javascript.jpg" alt="Curso">
+                <div class="card-body">
+                  <h1>Java Script</h1>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-body-secondary">Pro</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="img/curso-c++.jpg" alt="Curso">
+                <div class="card-body">
+                  <h1>C++</h1>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-body-secondary">Enterprise</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+
+            <!--Seccion donde se habla sobre las suscripciones-->
+            <div class="b-example-divider"></div>
+            <div class="px-4 pt-5 my-5 text-center">
+              <h1 class="display-4 fw-bold text-body-emphasis">Programa Tu Destino</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">¡Bienvenido a nuestra plataforma de cursos online en español, donde somos los mejores en la enseñanza de Python, JavaScript y C++! Nuestro enfoque innovador y personalizado te garantiza adquirir las mejores bases en estos lenguajes de programación esenciales. Con instructores expertos y contenido de alta calidad, estarás preparado para enfrentar cualquier desafío en el mundo de la programación. ¡No pierdas la oportunidad de aprender de los mejores y transformar tu futuro profesional! Dale click al botón para suscribirte y comienza tu camino hacia el éxito hoy mismo.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                  <a href="suscripcion.html">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Suscribete</button>
+                </a>
+                </div>
+              </div>
+              <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                  <img src="img/suscrip.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                </div>
+              </div>
+            </div>
+    </main>
+
+
+    <!--Seccion del footer-->
+      <div class="container">
+          <div class="b-example-divider"></div>
+          <div class="container">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+                <li class="nav-item"><a href="cursos.html" class="nav-link px-2 text-body-secondary">Cursos</a></li>
+                <li class="nav-item"><a href="suscripcion.html" class="nav-link px-2 text-body-secondary">Suscripciones</a></li>
+                <li class="nav-item"><a href="nosotros.html" class="nav-link px-2 text-body-secondary">Nosotros</a></li>
+              </ul>
+              <p class="text-center text-body-secondary">&copy; 2024 Juan Turcios</p>
+            </footer>
+          </div>
+      </div>
+</body>
+</html>
